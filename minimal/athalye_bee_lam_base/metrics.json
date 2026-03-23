@@ -1,0 +1,104 @@
+{
+  "config_name": "athalye_bee_lam_base",
+  "category": "athalye_sweep",
+  "model_path": "D:\\adversarial_object_project\\models\\Sea_Turtle_V1\\Sea_Turtle_V1_oriented.obj",
+  "attack_type": "lagrangian",
+  "epsilon": 0.1,
+  "num_iterations": 100,
+  "num_views": 40,
+  "learning_rate": 0.05,
+  "noise_std_range": [
+    0.0,
+    0.1
+  ],
+  "blur_probability": 0.0,
+  "blur_sigma_range": null,
+  "random_lighting": false,
+  "camera_roll_range": [
+    -180,
+    180
+  ],
+  "render_size_range": null,
+  "color_palette": null,
+  "whitebox_models": [
+    "resnet50",
+    "densenet121",
+    "mobilenet_v2",
+    "efficientnet_b0"
+  ],
+  "blackbox_models": [
+    "vgg16",
+    "vit_b_16",
+    "swin_t",
+    "convnext_tiny",
+    "inception_v3",
+    "efficientnet_v2_s"
+  ],
+  "elapsed_time": 1900.7509531974792,
+  "final_whitebox_success_rate": 0.98,
+  "eval_success_rate": 0.98,
+  "blackbox_success_rate": 0.6766666666666667,
+  "blackbox_per_model": {
+    "vgg16": {
+      "success_rate": 1.0,
+      "average_target_confidence": 0.9654258292913437,
+      "num_views": 100
+    },
+    "vit_b_16": {
+      "success_rate": 0.66,
+      "average_target_confidence": 0.46853872104315086,
+      "num_views": 100
+    },
+    "swin_t": {
+      "success_rate": 0.54,
+      "average_target_confidence": 0.1473790153861046,
+      "num_views": 100
+    },
+    "convnext_tiny": {
+      "success_rate": 0.05,
+      "average_target_confidence": 0.02933388654142618,
+      "num_views": 100
+    },
+    "inception_v3": {
+      "success_rate": 0.83,
+      "average_target_confidence": 0.8162275389861315,
+      "num_views": 100
+    },
+    "efficientnet_v2_s": {
+      "success_rate": 0.98,
+      "average_target_confidence": 0.7092630294431,
+      "num_views": 100
+    }
+  },
+  "timestamp": "2026-02-21 10:24:14",
+  "timing_stats": {
+    "render": {
+      "count": 1003,
+      "mean_ms": 1766.8501604181286,
+      "median_ms": 1763.5006000055,
+      "min_ms": 1719.755299971439,
+      "max_ms": 3812.757999985479,
+      "std_ms": 67.84328847249172,
+      "total_ms": 1772150.7108993828
+    },
+    "gradient": {},
+    "iteration": {},
+    "eval": {},
+    "totals": {
+      "renders": 1003,
+      "iterations": 0
+    },
+    "forward_pass": {
+      "count": 1003,
+      "mean_ms": 33.38460857605753,
+      "median_ms": 32.62910002376884,
+      "min_ms": 30.332399997860193,
+      "max_ms": 315.3714000945911,
+      "std_ms": 9.166678258053528,
+      "total_ms": 33484.7624017857
+    }
+  },
+  "predicted_groundtruth_class": null,
+  "predicted_groundtruth_confidence": null,
+  "predicted_groundtruth_stats": null
+}

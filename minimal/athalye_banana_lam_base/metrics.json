@@ -1,0 +1,104 @@
+{
+  "config_name": "athalye_banana_lam_base",
+  "category": "athalye_sweep",
+  "model_path": "D:\\adversarial_object_project\\models\\Sea_Turtle_V1\\Sea_Turtle_V1_oriented.obj",
+  "attack_type": "lagrangian",
+  "epsilon": 0.1,
+  "num_iterations": 100,
+  "num_views": 40,
+  "learning_rate": 0.05,
+  "noise_std_range": [
+    0.0,
+    0.1
+  ],
+  "blur_probability": 0.0,
+  "blur_sigma_range": null,
+  "random_lighting": false,
+  "camera_roll_range": [
+    -180,
+    180
+  ],
+  "render_size_range": null,
+  "color_palette": null,
+  "whitebox_models": [
+    "resnet50",
+    "densenet121",
+    "mobilenet_v2",
+    "efficientnet_b0"
+  ],
+  "blackbox_models": [
+    "vgg16",
+    "vit_b_16",
+    "swin_t",
+    "convnext_tiny",
+    "inception_v3",
+    "efficientnet_v2_s"
+  ],
+  "elapsed_time": 1976.3613402843475,
+  "final_whitebox_success_rate": 0.36,
+  "eval_success_rate": 0.36,
+  "blackbox_success_rate": 0.32166666666666666,
+  "blackbox_per_model": {
+    "vgg16": {
+      "success_rate": 0.05,
+      "average_target_confidence": 0.04014212267124094,
+      "num_views": 100
+    },
+    "vit_b_16": {
+      "success_rate": 0.79,
+      "average_target_confidence": 0.44789877359755337,
+      "num_views": 100
+    },
+    "swin_t": {
+      "success_rate": 0.35,
+      "average_target_confidence": 0.09553130344487727,
+      "num_views": 100
+    },
+    "convnext_tiny": {
+      "success_rate": 0.22,
+      "average_target_confidence": 0.05207224397454411,
+      "num_views": 100
+    },
+    "inception_v3": {
+      "success_rate": 0.02,
+      "average_target_confidence": 0.05177888367185801,
+      "num_views": 100
+    },
+    "efficientnet_v2_s": {
+      "success_rate": 0.5,
+      "average_target_confidence": 0.33947556589642774,
+      "num_views": 100
+    }
+  },
+  "timestamp": "2026-02-21 07:15:37",
+  "timing_stats": {
+    "render": {
+      "count": 1003,
+      "mean_ms": 1836.8079999981983,
+      "median_ms": 1818.7732000369579,
+      "min_ms": 1729.8206000123173,
+      "max_ms": 4382.550599984825,
+      "std_ms": 101.3895349783861,
+      "total_ms": 1842318.423998193
+    },
+    "gradient": {},
+    "iteration": {},
+    "eval": {},
+    "totals": {
+      "renders": 1003,
+      "iterations": 0
+    },
+    "forward_pass": {
+      "count": 1003,
+      "mean_ms": 34.67144087597204,
+      "median_ms": 33.94039999693632,
+      "min_ms": 30.5802000220865,
+      "max_ms": 297.67440003342927,
+      "std_ms": 8.790400450432596,
+      "total_ms": 34775.45519859996
+    }
+  },
+  "predicted_groundtruth_class": null,
+  "predicted_groundtruth_confidence": null,
+  "predicted_groundtruth_stats": null
+}
