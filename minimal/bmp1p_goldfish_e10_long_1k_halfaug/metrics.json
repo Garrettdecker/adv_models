@@ -1,0 +1,138 @@
+{
+  "config_name": "bmp1p_goldfish_e10_long_1k_halfaug",
+  "category": "tank_cleaned",
+  "model_path": "D:\\adversarial_object_project\\models\\relevant_files\\bmp-1p_at4\\bmp-1p_at4_no_scope_atlas.obj",
+  "target_class": 1,
+  "attack_type": "lagrangian",
+  "targeted": true,
+  "epsilon": 0.1,
+  "lambda_val": 0.0002,
+  "color_space": "lab",
+  "distance_mode": "rendered",
+  "pgd_steps": 1000,
+  "num_restarts": 4,
+  "alpha": 1.0,
+  "update_rule": "raw",
+  "gradient_normalizer": "none",
+  "momentum": 0.9,
+  "loss_function": "cross_entropy",
+  "logit_fusion": "softmax_avg",
+  "loss_balancer": null,
+  "ti_kernel_size": 15,
+  "ti_sigma": 3.0,
+  "views_per_step": 80,
+  "view_pool_size": 40,
+  "view_refresh_count": 16,
+  "num_iterations": 500,
+  "num_views": 40,
+  "learning_rate": 0.02,
+  "noise_std_range": [
+    0.0,
+    0.05
+  ],
+  "blur_probability": 0.0,
+  "blur_sigma_range": null,
+  "random_lighting": false,
+  "camera_roll_range": [
+    -45,
+    45
+  ],
+  "render_size_range": null,
+  "color_palette": null,
+  "whitebox_models": [
+    "inception_v3"
+  ],
+  "blackbox_models": [
+    "resnet50",
+    "densenet121",
+    "mobilenet_v2",
+    "efficientnet_b0",
+    "vgg16",
+    "vit_b_16",
+    "swin_t",
+    "convnext_tiny",
+    "efficientnet_v2_s"
+  ],
+  "elapsed_time": 15918.364911556244,
+  "final_whitebox_success_rate": 0.945,
+  "eval_success_rate": 0.945,
+  "blackbox_success_rate": 0.26166666666666666,
+  "blackbox_per_model": {
+    "resnet50": {
+      "success_rate": 0.195,
+      "average_target_confidence": 0.12631055485285286,
+      "num_views": 200
+    },
+    "densenet121": {
+      "success_rate": 0.225,
+      "average_target_confidence": 0.16130887872656102,
+      "num_views": 200
+    },
+    "mobilenet_v2": {
+      "success_rate": 0.135,
+      "average_target_confidence": 0.09810109104589174,
+      "num_views": 200
+    },
+    "efficientnet_b0": {
+      "success_rate": 0.25,
+      "average_target_confidence": 0.10719189349958469,
+      "num_views": 200
+    },
+    "vgg16": {
+      "success_rate": 0.34,
+      "average_target_confidence": 0.2651396413978914,
+      "num_views": 200
+    },
+    "vit_b_16": {
+      "success_rate": 0.03,
+      "average_target_confidence": 0.023618852470553973,
+      "num_views": 200
+    },
+    "swin_t": {
+      "success_rate": 0.2,
+      "average_target_confidence": 0.08312579441197158,
+      "num_views": 200
+    },
+    "convnext_tiny": {
+      "success_rate": 0.405,
+      "average_target_confidence": 0.063430465462734,
+      "num_views": 200
+    },
+    "efficientnet_v2_s": {
+      "success_rate": 0.575,
+      "average_target_confidence": 0.34725438946770737,
+      "num_views": 200
+    }
+  },
+  "timestamp": "2026-03-24 17:47:29",
+  "timing_stats": {
+    "render": {
+      "count": 3859,
+      "mean_ms": 3624.392649391008,
+      "median_ms": 3619.918200005486,
+      "min_ms": 3554.364000003261,
+      "max_ms": 7156.769799999893,
+      "std_ms": 63.65850135659859,
+      "total_ms": 13986531.233999923
+    },
+    "gradient": {},
+    "iteration": {},
+    "eval": {},
+    "totals": {
+      "renders": 3859,
+      "iterations": 0
+    },
+    "forward_pass": {
+      "count": 3859,
+      "mean_ms": 8.214177870046061,
+      "median_ms": 8.17500000266591,
+      "min_ms": 6.819099995482247,
+      "max_ms": 21.202799995080568,
+      "std_ms": 0.8492765174438652,
+      "total_ms": 31698.512400507752
+    }
+  },
+  "predicted_groundtruth_class": null,
+  "predicted_groundtruth_confidence": null,
+  "predicted_groundtruth_stats": null
+}
